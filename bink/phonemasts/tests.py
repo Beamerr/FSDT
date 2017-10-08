@@ -1,10 +1,10 @@
 import unittest
-from phonemastdata import read_data
+from phonemastdata import open_csv
 
-class CSVTest(unitest.TestCase):
+class CSVTest(unittest.TestCase):
 
     def setUp(self):
-        self.data = "MobilePhoneMasts.csv"
+        self.data = "/Users/ian/FSDT/bink/MobilePhoneMasts.csv"
 
     def test_csv_read_data_titles(self):
         self.assertEqual(
